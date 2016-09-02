@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shap_billboard_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/homapage_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:id="@+id/billboarddetail_pic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/warning" />
+
+        <TextView
+            android:id="@+id/billboard_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/billboarddetail_delect"
+            android:layout_toRightOf="@+id/billboarddetail_pic"
+            android:text="最新公告：李老师发布了三个资源"
+            android:textColor="#568197" />
+
+        <RelativeLayout
+            android:id="@+id/billboarddetail_delect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:padding="3dp" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/homepage_comment_delect" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#00bcd4" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" > 
+
+            <TextView
+                android:id="@+id/billboard_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:text="22233333"
+                android:textColor="#669946" />
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00bcd4" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/billboard_detail_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:text="huangwei"
+                android:textColor="#568197" />
+
+            <TextView
+                android:id="@+id/billboard_detail_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/billboard_detail_name_text"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:text="2016-2-17"
+                android:textColor="#568197" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
